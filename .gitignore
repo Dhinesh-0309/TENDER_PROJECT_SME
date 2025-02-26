@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.db
+/media/
+/staticfiles/
+
+# Node.js
+node_modules/
+*.log
+.env
