@@ -1,0 +1,111 @@
+/* Full-screen background with gradient animation */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  animation: bgAnimation 6s infinite alternate ease-in-out;
+}
+
+/* Background gradient animation */
+@keyframes bgAnimation {
+  0% { background: linear-gradient(135deg, #007bff, #00d4ff); }
+  100% { background: linear-gradient(135deg, #00d4ff, #007bff); }
+}
+
+/* Floating card effect */
+.signup-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  animation: slideIn 0.8s ease-out;
+}
+
+/* Form slide-in animation */
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Title styling */
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input fields with animations */
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input hover & focus effect */
+.signup-form input:hover,
+.signup-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Signup button with hover effects */
+.signup-btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+/* Button hover effect */
+.signup-btn:hover {
+  background: #ff9900;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(255, 153, 0, 0.4);
+}
+
+/* Login redirect text */
+.login-redirect {
+  margin-top: 15px;
+  font-size: 1rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Login link styling */
+.login-redirect a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

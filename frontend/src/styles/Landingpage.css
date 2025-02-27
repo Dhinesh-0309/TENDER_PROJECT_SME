@@ -1,0 +1,118 @@
+/* LandingPage.css */
+.landing-container {
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  max-width: 900px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main Title */
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/* Highlight Text */
+.highlight {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.3rem;
+  max-width: 650px;
+  margin: 15px auto 30px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* CTA Button */
+.cta-button {
+  background: #ffcc00;
+  color: #333;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background: #ff9900;
+  transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 14px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+  }
+}
